@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { BottomNav } from "./bottom-nav";
+import { TopBar } from "./top-bar";
 
 export default async function SocioLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient();
@@ -14,6 +15,7 @@ export default async function SocioLayout({ children }: { children: React.ReactN
 
   return (
     <div className="flex min-h-dvh flex-col pb-20">
+      <TopBar />
       <div className="flex-1">{children}</div>
       <BottomNav />
     </div>
