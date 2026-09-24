@@ -1,4 +1,4 @@
-# Irossini — App de puntos para red de estaciones de servicio
+# iRossini — App de puntos para red de estaciones de servicio
 
 SaaS multi-tenant white-label: la red es el tenant raíz, cada estación es un
 sub-tenant. Puntos de red compartidos con ledger de lotes FIFO por emisor, pago
@@ -75,12 +75,15 @@ niveles real (todavía no existe en el modelo de datos).
 
 ## Pendiente antes de producción
 
-- Nombre de marca real (`NEXT_PUBLIC_BRAND_NAME`, `capacitor.config.ts` appId/appName).
+- Nombre de marca confirmado: **iRossini** (`NEXT_PUBLIC_BRAND_NAME=iRossini`).
   El paquete nativo Android todavía es `com.irossini.socio` (quedó del momento en
-  que era una app separada) — renombrarlo junto con el appId definitivo requiere
-  tocar `android/app/src/main/java/...` a mano, `cap sync` no lo hace solo.
-- Logo con transparencia real del diseñador (el actual se derivó automáticamente
-  del PNG con fondo blanco).
+  que era una app separada) — renombrarlo requiere tocar
+  `android/app/src/main/java/...` a mano, `cap sync` no lo hace solo.
+- Logo: tenemos versiones en mejor calidad del diseñador (isotipo corto y
+  lockup largo con wordmark "ROSSINI"), pero siguen siendo JPG sin canal
+  alfa — el recorte transparente que usa la app (`public/brand/*-transparent.png`)
+  se sigue derivando automáticamente por chroma-key. Si el diseñador puede pasar
+  un PNG/SVG con transparencia real, mejor.
 - Texto legal definitivo de `/privacidad` (Ley 25.326).
 - `packages/core/src/puntos/consumir-fifo.ts` debe migrarse a una función de
   Postgres transaccional antes de habilitar canjes (Fase 2) — la versión actual
