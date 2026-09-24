@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Diseño light-first: la marca se expresa en el hero con degradé, no en un modo
+   oscuro global. Si más adelante se arma una variante dark, es un pase de diseño
+   propio — no un simple swap de colores como estaba antes. */
+body {
+  background-color: theme("colors.white");
+  color: theme("colors.brand.tinta");
+}
+
+input::placeholder {
+  color: theme("colors.neutral.400");
+}
