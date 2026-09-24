@@ -11,8 +11,8 @@ import type { CapacitorConfig } from "@capacitor/cli";
  * cleartext. En producción, debe ser la URL HTTPS de Vercel.
  */
 const config: CapacitorConfig = {
-  appId: "com.irossini.socio", // placeholder — reemplazar cuando esté definido el nombre de marca
-  appName: "Socio", // placeholder — NEXT_PUBLIC_BRAND_NAME define el nombre real en la UI
+  appId: "com.irossini.app", // placeholder — reemplazar cuando esté definido el nombre de marca
+  appName: "Irossini", // placeholder — NEXT_PUBLIC_BRAND_NAME define el nombre real en la UI
   webDir: "public",
   server: {
     url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",

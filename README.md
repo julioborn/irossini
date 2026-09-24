@@ -76,6 +76,9 @@ niveles real (todavía no existe en el modelo de datos).
 ## Pendiente antes de producción
 
 - Nombre de marca real (`NEXT_PUBLIC_BRAND_NAME`, `capacitor.config.ts` appId/appName).
+  El paquete nativo Android todavía es `com.irossini.socio` (quedó del momento en
+  que era una app separada) — renombrarlo junto con el appId definitivo requiere
+  tocar `android/app/src/main/java/...` a mano, `cap sync` no lo hace solo.
 - Logo con transparencia real del diseñador (el actual se derivó automáticamente
   del PNG con fondo blanco).
 - Texto legal definitivo de `/privacidad` (Ley 25.326).
