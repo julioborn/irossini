@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Socio</string>
-    <string name="title_activity_main">Socio</string>
+    <string name="app_name">iRossini</string>
+    <string name="title_activity_main">iRossini</string>
     <string name="package_name">com.irossini.socio</string>
     <string name="custom_url_scheme">com.irossini.socio</string>
 </resources>

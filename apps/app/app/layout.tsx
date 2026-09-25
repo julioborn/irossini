@@ -25,6 +25,10 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
+  // Necesario para que env(safe-area-inset-bottom) devuelva algo distinto de 0
+  // en iPhones con home indicator — si no, la barra inferior queda pegada
+  // contra el borde del sistema.
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

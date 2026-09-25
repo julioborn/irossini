@@ -14,7 +14,7 @@ export default async function SocioLayout({ children }: { children: React.ReactN
   if (!socio) redirect("/sin-acceso");
 
   return (
-    <div className="flex min-h-dvh flex-col pb-20">
+    <div className="flex min-h-dvh flex-col pb-[calc(5rem+env(safe-area-inset-bottom))]">
       <TopBar />
       <div className="flex-1">{children}</div>
       <BottomNav />

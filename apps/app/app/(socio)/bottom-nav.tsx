@@ -21,7 +21,7 @@ export function BottomNav() {
           <Link
             key={href}
             href={href}
-            className={`flex flex-1 flex-col items-center gap-1 py-3 text-xs font-medium ${
+            className={`flex flex-1 flex-col items-center gap-1 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] text-xs font-medium ${
               activo ? "text-brand-green-600" : "text-neutral-400"
             }`}
           >
